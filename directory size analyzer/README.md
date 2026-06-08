@@ -17,21 +17,29 @@ It shows directory and file sizes in a human-readable format, skipping specified
 ```bash
 git clone https://github.com/tanvirmahfuz22/diskpeek.git
 cd diskpeek
-
 ```
-### 2.Install locally with pipx(safer):
 
-install pipx if not installed 
+### 2. Install locally
+
+**macOS/Linux:**
 ```bash
+pip install -e .
+```
+
+**With pipx (safer, avoids polluting global packages):**
+```bash
+# macOS
+brew install pipx
+pipx ensurepath
+
+# Linux
 sudo apt install pipx
 pipx ensurepath
 source ~/.bashrc
-```
-install diskpeek
-```bash
+
+# Install diskpeek
 pipx install .
 which diskpeek
-
 ```
 
 ## Usage
